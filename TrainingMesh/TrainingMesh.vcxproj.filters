@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Geometry\Geometry.cpp" />
+    <ClCompile Include="Geometry\Triangle.cpp" />
+    <ClCompile Include="Geometry\Hexagone.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh\Mesh.cpp" />
+    <ClCompile Include="Geometry\Quadrangle.cpp" />
+    <ClCompile Include="Grammar\Symbol.cpp" />
+    <ClCompile Include="Grammar\Map\QuadrangleSymbol.cpp" />
+    <ClCompile Include="Geometry\Pentagone.cpp" />
+    <ClCompile Include="Transform\Mat4x4.cpp" />
+    <ClCompile Include="Transform\Transform.cpp" />
+    <ClCompile Include="Grammar\Map\TriangleSymbol.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\Etage.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\RDC.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\Toit.cpp" />
+    <ClCompile Include="Grammar\Map\PentagoneSymbol.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Geometry\Circle.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\EtageCircle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constantes.h" />
+    <ClInclude Include="Geometry\Geometry.h" />
+    <ClInclude Include="Geometry\Triangle.h" />
+    <ClInclude Include="Geometry\Hexagone.h" />
+    <ClInclude Include="Mesh\Mesh.h" />
+    <ClInclude Include="MeshWriter.h" />
+    <ClInclude Include="Geometry\Quadrangle.h" />
+    <ClInclude Include="Grammar\Symbol.h" />
+    <ClInclude Include="Grammar\Map\QuadrangleSymbol.h" />
+    <ClInclude Include="Geometry\Pentagone.h" />
+    <ClInclude Include="Transform\Mat4x4.h" />
+    <ClInclude Include="Transform\Transform.h" />
+    <ClInclude Include="Grammar\Map\TriangleSymbol.h" />
+    <ClInclude Include="Vec3.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\Etage.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\RDC.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\Toit.h" />
+    <ClInclude Include="Grammar\Map\PentagoneSymbol.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Geometry\Circle.h" />
+    <ClInclude Include="Param.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\EtageCircle.h" />
+  </ItemGroup>
+</Project>

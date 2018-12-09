@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6FEAD73-8101-449D-9291-F49095A7548D}</ProjectGuid>
+    <RootNamespace>TrainingMesh</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Grammar\BatimentQuadra\EtageCircle.cpp" />
+    <ClCompile Include="Geometry\Circle.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\Etage.cpp" />
+    <ClCompile Include="Geometry\Geometry.cpp" />
+    <ClCompile Include="Geometry\Triangle.cpp" />
+    <ClCompile Include="Geometry\Hexagone.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh\Mesh.cpp" />
+    <ClCompile Include="Geometry\Quadrangle.cpp" />
+    <ClCompile Include="Grammar\Symbol.cpp" />
+    <ClCompile Include="Grammar\Map\QuadrangleSymbol.cpp" />
+    <ClCompile Include="Geometry\Pentagone.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\RDC.cpp" />
+    <ClCompile Include="Grammar\BatimentQuadra\Toit.cpp" />
+    <ClCompile Include="Grammar\Map\PentagoneSymbol.cpp" />
+    <ClCompile Include="Transform\Mat4x4.cpp" />
+    <ClCompile Include="Transform\Transform.cpp" />
+    <ClCompile Include="Grammar\Map\TriangleSymbol.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Grammar\BatimentQuadra\EtageCircle.h" />
+    <ClInclude Include="Geometry\Circle.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\Etage.h" />
+    <ClInclude Include="Constantes.h" />
+    <ClInclude Include="Geometry\Geometry.h" />
+    <ClInclude Include="Geometry\Triangle.h" />
+    <ClInclude Include="Geometry\Hexagone.h" />
+    <ClInclude Include="Mesh\Mesh.h" />
+    <ClInclude Include="MeshWriter.h" />
+    <ClInclude Include="Geometry\Quadrangle.h" />
+    <ClInclude Include="Grammar\Symbol.h" />
+    <ClInclude Include="Grammar\Map\QuadrangleSymbol.h" />
+    <ClInclude Include="Geometry\Pentagone.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\RDC.h" />
+    <ClInclude Include="Grammar\BatimentQuadra\Toit.h" />
+    <ClInclude Include="Grammar\Map\PentagoneSymbol.h" />
+    <ClInclude Include="Param.h" />
+    <ClInclude Include="Transform\Mat4x4.h" />
+    <ClInclude Include="Transform\Transform.h" />
+    <ClInclude Include="Grammar\Map\TriangleSymbol.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vec3.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
